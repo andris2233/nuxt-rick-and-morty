@@ -1,8 +1,20 @@
 <template>
   <div>
+    <VNavbar />
     <Nuxt />
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+import VNavbar from '@/components/VNavbar.vue';
+
+export default Vue.extend({
+  components: {
+    VNavbar
+  }
+})
+</script>
 
 <style>
 html {
