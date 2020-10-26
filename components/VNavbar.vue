@@ -47,13 +47,13 @@ export default class VNavbar extends Vue {
       color: rgb(204, 204, 204);
       text-decoration: none;
       transition: all .3s;
-      // &:hover {
-      //   color: #fff;
-      //   text-shadow: 0 0 5px #fff;
-      // }
-      &-active, &:hover {
+      &:hover {
         color: #fff;
         text-shadow: 0 0 5px #fff;
+      }
+      &-active, &-active:hover {
+        color: rgb(255, 184, 51);
+        text-shadow: 0 0 5px rgb(255, 184, 51);
       }
     }
   }
