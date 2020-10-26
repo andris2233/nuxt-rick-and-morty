@@ -9,11 +9,12 @@ class Api {
   }
   async getById (id: number | string): Promise<object> {
     const res = await http.get(`${this.base}/${id}`);
-    return res;
+    return res.data;
   };
   async getAll(): Promise<object> {
     const res = await http.get(this.base);
-    return res;
+    console.log(res);
+    return res.data;
   }
   async getByFiltrer(props: any): Promise<object> {
     const isValidProps: boolean = !!Object.keys(props).find((prop: string) => { !this.hasProps.includes(prop) });
@@ -24,7 +25,7 @@ class Api {
       return url += `&${curProp}=${props[curProp]}`;
     });
     const res = await http.get(`${this.base}/?${propsStr.substr(1, propsStr.length)}`);
-    return res;
+    return res.data;
   }
 }
 
