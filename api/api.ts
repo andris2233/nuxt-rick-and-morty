@@ -13,7 +13,6 @@ class Api {
   };
   async getAll(): Promise<object> {
     const res = await http.get(this.base);
-    console.log(res);
     return res.data;
   }
   async getByFiltrer(props: any): Promise<object> {

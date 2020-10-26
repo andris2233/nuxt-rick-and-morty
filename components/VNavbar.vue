@@ -4,11 +4,6 @@
                active-class="navbar__link-active"
                to="/"
                exact>
-      Главная
-    </nuxt-link>
-    <nuxt-link class="navbar__link"
-               active-class="navbar__link-active"
-               to="/characters">
       Персонажи
     </nuxt-link>
     <nuxt-link class="navbar__link"
