@@ -43,4 +43,8 @@ html {
   margin: 0;
 }
 
+body {
+  overflow-y: auto;
+}
+
 </style>
